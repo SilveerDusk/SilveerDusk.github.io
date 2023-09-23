@@ -1,10 +1,15 @@
+/* Body */
 body{
-  font-size: 14px
-}
-p {
+  background: linear-gradient(135deg, #0077B6, #48CAE4);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
   font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 14px;
+}
+main{
+  padding: 20px;
 }
 /* NavBar */
 .navbar{
