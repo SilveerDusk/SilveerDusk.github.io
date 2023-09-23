@@ -6,3 +6,30 @@ p {
   font-weight: bold;
   font-size: 14px;
 }
+/* NavBar */
+.navbar{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #03055ed4;
+}
+.logo{
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 20px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: seashell;
+}
+.navbar li{
+  display: inline;
+}
+.navbar a{
+  padding-right: 25px;
+  font-size: 20px;
+  color: seashell;
+}
