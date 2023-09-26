@@ -133,10 +133,25 @@ label{
   font-size: 1em;
   color: seashell;
 }
-h3{
+/* Resume */
+.resume{
   display: flex;
+  flex-direction: column;
   font-size: 1em;
   justify-content: center;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.resume section{
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 15px;
+}
+.resume li{
+  margin: 20px;
 }
 /* Footer */
 footer{
