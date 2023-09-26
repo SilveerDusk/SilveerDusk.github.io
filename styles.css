@@ -52,6 +52,35 @@ main{
   border-radius: 20px;
   color: seashell;
 }
+/* Home Page */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about img {
+  border: 2px solid black;
+  border-radius: 10%;
+  max-width: 250px;
+  flex-basis: 50px;
+  flex-grow: 1;
+  margin: 20px;
+}
+.about p{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-overflow: wrap;
+  height: 100px;
+  flex-basis: 50px;
+  flex-grow: 1;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 1.5;
+  overflow: hidden;
+}
 /* Contact */
 form{
   align-items: center;
@@ -79,4 +108,9 @@ input{
 label{
   margin: 10px;
   padding: 10px;
+}
+/* Footer */
+footer{
+  display: flex;
+  justify-content: center;
 }
