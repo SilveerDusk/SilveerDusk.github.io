@@ -110,6 +110,9 @@ label{
   padding: 10px;
 }
 /* Protfolio */
+.page-title a{
+  color: seashell;
+}
 .project{
   display: flex;
   padding: 10px;
@@ -129,6 +132,11 @@ label{
   display: block;
   font-size: 1em;
   color: seashell;
+}
+h3{
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
 }
 /* Footer */
 footer{
