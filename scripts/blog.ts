@@ -30,8 +30,10 @@ function getBlog() {
     const postPreview = document.createElement("div");
     postPreview.classList.add("post-preview");
     postPreview.innerHTML = `
+    <div class="top">
     <h2 class="post-title">${title}</h2>
     <h3 class="post-subtitle">${date}</h3>
+    </div>
     <p class="post-description">${description}</p>`;
 
     postPreview.appendChild(link);

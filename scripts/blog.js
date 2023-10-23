@@ -1,5 +1,4 @@
-"use strict";
-const blogs = [
+var blogs = [
     {
         title: "test-1",
         date: "10/22/23",
@@ -14,17 +13,15 @@ const blogs = [
     }
 ];
 function getBlog() {
-    const blogList = document.getElementById("blog-list");
-    blogs.forEach(({ slug, title, date, description }) => {
-        const link = document.createElement("a");
-        link.href = `blogs/${slug}.html`;
+    var blogList = document.getElementById("blog-list");
+    blogs.forEach(function (_a) {
+        var slug = _a.slug, title = _a.title, date = _a.date, description = _a.description;
+        var link = document.createElement("a");
+        link.href = "blogs/".concat(slug, ".html");
         link.innerHTML = "Read More";
-        const postPreview = document.createElement("div");
+        var postPreview = document.createElement("div");
         postPreview.classList.add("post-preview");
-        postPreview.innerHTML = `
-    <h2 class="post-title">${title}</h2>
-    <h3 class="post-subtitle">${date}</h3>
-    <p class="post-description">${description}</p>`;
+        postPreview.innerHTML = "\n    <div class=\"top\">\n    <h2 class=\"post-title\">".concat(title, "</h2>\n    <h3 class=\"post-subtitle\">").concat(date, "</h3>\n    </div>\n    <p class=\"post-description\">").concat(description, "</p>");
         postPreview.appendChild(link);
         if (blogList) {
             blogList.appendChild(postPreview);
