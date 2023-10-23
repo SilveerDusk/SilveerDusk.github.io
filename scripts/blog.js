@@ -3,13 +3,13 @@ var blogs = [
         title: "Dinner Date with Xavier",
         date: "10/22/23",
         description: "Over the Summer I had a Fun Day Chefing with My Bestie",
-        slug: "template"
+        slug: "blog2"
     },
     {
         title: "My Cats",
         date: "10/23/23",
         description: "Meet My Cats Investigating My Bagel",
-        slug: "template"
+        slug: "blog1"
     }
 ];
 function getBlog() {
