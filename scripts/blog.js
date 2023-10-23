@@ -1,14 +1,14 @@
 var blogs = [
     {
-        title: "test-1",
+        title: "Dinner Date with Xavier",
         date: "10/22/23",
-        description: "the first test blog",
+        description: "Over the Summer I had a Fun Day Chefing with My Bestie",
         slug: "template"
     },
     {
-        title: "test-2",
+        title: "My Cats",
         date: "10/23/23",
-        description: "the second test blog",
+        description: "Meet My Cats Investigating My Bagel",
         slug: "template"
     }
 ];
