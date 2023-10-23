@@ -161,7 +161,7 @@ footer{
 }
 
 /* Blog */
-.post-preview{
+.post{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,6 +188,11 @@ footer{
 .top h3{
   margin: 10px;
 }
-.post-preview a{
+.post a{
   margin: 5px;
+}
+.post p{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }

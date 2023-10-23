@@ -28,7 +28,7 @@ function getBlog() {
     link.href = `blogs/${slug}.html`;
     link.innerHTML = "Read More";
     const postPreview = document.createElement("div");
-    postPreview.classList.add("post-preview");
+    postPreview.classList.add("post");
     postPreview.innerHTML = `
     <div class="top">
     <h2 class="post-title">${title}</h2>

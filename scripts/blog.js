@@ -20,7 +20,7 @@ function getBlog() {
         link.href = "blogs/".concat(slug, ".html");
         link.innerHTML = "Read More";
         var postPreview = document.createElement("div");
-        postPreview.classList.add("post-preview");
+        postPreview.classList.add("post");
         postPreview.innerHTML = "\n    <div class=\"top\">\n    <h2 class=\"post-title\">".concat(title, "</h2>\n    <h3 class=\"post-subtitle\">").concat(date, "</h3>\n    </div>\n    <p class=\"post-description\">").concat(description, "</p>");
         postPreview.appendChild(link);
         if (blogList) {
