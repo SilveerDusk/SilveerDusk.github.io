@@ -17,7 +17,7 @@ function getBlog() {
     const blogList = document.getElementById("blog-list");
     blogs.forEach(({ slug, title, date, description }) => {
         const link = document.createElement("a");
-        link.href = `blogs/${slug}.html`;
+        link.href = `milestone1/blogs/${slug}.html`;
         link.innerHTML = "Read More";
         const postPreview = document.createElement("div");
         postPreview.classList.add("post");
