@@ -1,0 +1,28 @@
+/* NavBar */
+.navbar{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #03055ed4;
+}
+.logo a{
+  display: block;
+  font-size: 1em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 20px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: seashell;
+  text-decoration: none;
+}
+.navbar li{
+  display: inline;
+}
+.navbar li a{
+  padding-right: 25px;
+  font-size: 20px;
+  color: seashell;
+}
