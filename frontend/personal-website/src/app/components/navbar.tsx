@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../navbar.module.css";
+import style from "@/components/navbar.module.css";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -7,11 +7,14 @@ export default function Navbar() {
     // replace everything in between the <header> & <header /> tags
     // with your navbar code from your earlier milestones
     <header className={style.navbar} >
-      <h1> Jason Jelincic&aposs Personal Website </h1>
+      <h1> Jason Jelincic&#39;s Personal Website </h1>
       <nav>
         <Link href="/" >Home</Link>
         <Link href="/about" >About Me</Link>
 				<Link href="/resume" >Resume</Link>
+        <Link href="/protfolio" >Protfolio</Link>
+				<Link href="/contact" >Connect With Me</Link>
+        <Link href="/blogs" >Blog</Link>
       </nav>
     </header>
   );
