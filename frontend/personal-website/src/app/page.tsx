@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="page-title">Welcome to My Website!</h1>
         <div className="about">
           <div className="about-image">
-            <Image src="/images/Slackgotophotocopy.jpeg" alt="A Photo of Me" width={400} height={400} ></Image>
+            <Image src="/Slackgotophotocopy.jpeg" alt="A Photo of Me" width={400} height={400} ></Image>
           </div>
           <div className="about-text">
             <p>My name is <strong>Jason Jelincic</strong>, I am a <em>second year</em> computer science student at <strong>Cal Poly SLO </strong>

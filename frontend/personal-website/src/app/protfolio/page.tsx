@@ -7,7 +7,7 @@ export default function Protfolio() {
         <h2>I did a thing once... well maybe a few times.</h2>
         <div className="project">
           <a href="index.html">
-            <Image src="/images/JasonWebsite.png" alt="Photo of the Website" width={600} height={600}/>
+            <Image src="/JasonWebsite.png" alt="Photo of the Website" width={600} height={600}/>
           </a>
           <div className="project-details">
             <h3 className="project-name">
