@@ -65,6 +65,15 @@ main{
   margin-inline-end: 0px;
   font-weight: bold;
 }
+.sub-title{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 /* Home Page */
 .about {
   display: flex;
@@ -123,14 +132,11 @@ label{
   padding: 10px;
 }
 /* Protfolio */
-.page-title a{
-  color: seashell;
-}
 .project{
   display: flex;
   padding: 10px;
 }
-.project img{
+.project_img{
   border: 2px solid black;
   border-radius: 5%;
   max-height: 500px;
@@ -138,13 +144,21 @@ label{
   flex-grow: 1;
   margin: 20px;
 }
-.project-details{
-  padding: 10px;
+.project_details{
+  padding: 20px;
 }
-.project-details a{
+.project_title{
   display: block;
-  font-size: 1em;
-  color: seashell;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.project_details{
+  margin-bottom: 10px;
+}
+.project_link{
+  text-decoration: underline;
+  font-weight: bold;
 }
 /* Resume */
 .resume{
