@@ -2,7 +2,6 @@ export default function Resume() {
   return (<div>
 			<div className="centered">
         <h1 className="title"><a href="/2023CSResume.pdf">My Resume</a></h1>
-        <h3>Well, I am currently unemployed? Do you need another reason? You do? Oh....</h3>
       <div className="resume">
         <section className="section">
           <h2 className="section-title">Education</h2>
