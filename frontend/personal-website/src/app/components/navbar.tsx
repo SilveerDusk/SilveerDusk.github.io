@@ -7,7 +7,7 @@ export default function Navbar() {
     // replace everything in between the <header> & <header /> tags
     // with your navbar code from your earlier milestones
     <header className={style.navbar} >
-      <h1 className={style.logo_a}> Jason Jelincic&#39;s Personal Website </h1>
+      <Link href="/"><h1 className={style.logo_a}> Jason Jelincic&#39;s Personal Website </h1></Link>
       <nav>
         <Link href="/" className={style.navbar_li_a}>Home</Link>
         <Link href="/blogs" className={style.navbar_li_a}>Blog</Link>
