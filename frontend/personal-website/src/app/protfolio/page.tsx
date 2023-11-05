@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Protfolio() {
   return (<div>
 			<div className="centered">
-        <h1 className="page-title">My Protfolio</h1>
+        <h1 className="title">My Protfolio</h1>
         <h2>I did a thing once... well maybe a few times.</h2>
         <div className="project">
           <a href="index.html">

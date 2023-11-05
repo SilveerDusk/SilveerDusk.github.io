@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Contact() {
   return (<div>
 			<div className="centered">
-        <h1 className="page-title">Connect With Me</h1>
+        <h1 className="title">Connect With Me</h1>
         <form>
           <div>
             <section>

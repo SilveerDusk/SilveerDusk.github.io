@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Home() {
   return (<div>
 				<div className="centered">
-        <h1 className="page-title">Welcome to My Website!</h1>
+        <h1 className="title">Welcome to My Website!</h1>
         <div className="about">
           <div className="about-image">
             <Image src="/Slackgotophotocopy.jpeg" alt="A Photo of Me" width={400} height={400} ></Image>
