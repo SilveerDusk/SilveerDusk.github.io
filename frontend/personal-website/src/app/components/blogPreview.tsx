@@ -15,7 +15,7 @@ export default function BlogPreview(props: Blog) {
       </div>
       <div>
         <p>{props.description}</p>
-        <Link href={`/${props.slug}`}>Read More</Link>
+        <Link href={props.slug}>Read More</Link>
       </div>
 	  </div>
   );
