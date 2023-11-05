@@ -180,13 +180,6 @@ label{
 .resume li{
   margin: 20px;
 }
-/* Footer */
-footer{
-  display: flex;
-  font-size: 1em;
-  justify-content: center;
-}
-
 /* Blog */
 .post{
   display: flex;
