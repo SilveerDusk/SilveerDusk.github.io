@@ -19,11 +19,6 @@ export default function Protfolio() {
             <a href="index.html">Check it Out!</a>
           </div>
         </div>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
       </div>
 			</div>) 
 }

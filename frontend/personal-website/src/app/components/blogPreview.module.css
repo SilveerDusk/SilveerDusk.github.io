@@ -18,18 +18,18 @@
   justify-content: space-between;
   width: 500px;
 }
-.top h2{
+.top_h2{
   margin: 10px;
   margin-left: 20px;
   font-size: 1.75em;
 }
-.top h3{
+.top_h3{
   margin: 10px;
 }
-.post a{
+.post_a{
   margin: 5px;
 }
-.post p{
+.post_p{
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;

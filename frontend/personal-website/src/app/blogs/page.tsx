@@ -4,7 +4,7 @@ import BlogPreview from '@/components/blogPreview';
 export default function Blogs() {
   return (<div>
 			<div className="centered">
-        <h1 className="page-title">Learn More</h1>
+        <h1 className='title'>Learn More</h1>
         <p>I&#39;m the prime age of 19... get it?</p>
         <div id="container">
           <ul id="blog-list">

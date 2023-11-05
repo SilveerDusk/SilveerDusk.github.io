@@ -8,16 +8,16 @@ export default function BlogPreview(props: Blog) {
   return (
 		// replace everything between the <div> & </div> tags
 		// with your code from earlier milestones
-    <div className={style.post}>
-      <div>
-        <h3> {props.title} </h3>
-				<p>{props.date}</p>
-      </div>
-      <div>
-        <p>{props.description}</p>
-        <Link href={props.slug}>Read More</Link>
-      </div>
-	  </div>
+      <div className={style.post}>
+        <div className={style.top}>
+          <h2 className={style.top_h2}> {props.title} </h2>
+          <h3 className={style.top_h3}>{props.date}</h3>
+        </div>
+        <div>
+          <p className={style.post_p}>{props.description}</p>
+          <Link className={style.post_a} href={props.slug}>Read More</Link>
+        </div>
+	    </div>
   );
 }
 
