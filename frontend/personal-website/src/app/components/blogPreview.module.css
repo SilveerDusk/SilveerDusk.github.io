@@ -28,9 +28,17 @@
 }
 .post_a{
   margin: 5px;
+  align-items: center;
 }
 .post_p{
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
 }

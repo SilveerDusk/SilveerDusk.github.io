@@ -13,7 +13,7 @@ export default function BlogPreview(props: Blog) {
           <h2 className={style.top_h2}> {props.title} </h2>
           <h3 className={style.top_h3}>{props.date}</h3>
         </div>
-        <div>
+        <div className={style.bottom}>
           <p className={style.post_p}>{props.description}</p>
           <Link className={style.post_a} href={props.slug}>Read More</Link>
         </div>
