@@ -1,7 +1,7 @@
 export default function Resume() {
   return (<div>
 			<div className="centered">
-        <h1 className="page-title"><a href="../images/JasonJelincicHackforImpactResumecopy.pdf">My Resume</a></h1>
+        <h1 className="page-title"><a href="/JasonJelincicHackforImpactResumecopy.pdf">My Resume</a></h1>
         <h3>Well, I am currently unemployed? Do you need another reason? You do? Oh....</h3>
       <div className="resume">
         <section className="section">
