@@ -140,35 +140,6 @@ label{
   margin: 10px;
   padding: 10px;
 }
-/* Protfolio */
-.project{
-  display: flex;
-  padding: 10px;
-}
-.project_img{
-  border: 2px solid black;
-  border-radius: 5%;
-  max-height: 500px;
-  flex-basis: 50px;
-  flex-grow: 1;
-  margin: 20px;
-}
-.project_details{
-  padding: 20px;
-}
-.project_title{
-  display: block;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.project_details{
-  margin-bottom: 10px;
-}
-.project_link{
-  text-decoration: underline;
-  font-weight: bold;
-}
 /* Resume */
 .resume{
   display: flex;
