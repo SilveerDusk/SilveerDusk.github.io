@@ -1,11 +1,11 @@
-export interface Blog {
+export interface BlogType {
   title: string;
   date: string;
   description: string;
   slug: string;
 }
 
-const blogs: Blog[] = [
+const blogs: BlogType[] = [
   {
     title: "Dinner Date with Xavier",
     date: "10/22/23",
