@@ -9,11 +9,11 @@ export default async function ProjectPreview(props: IProject) {
     <>
       <div className={style.project}>
         <div key={props.title}>
-          <a href="/">
+          <a href={props.slug}>
             <Image
               className={style.project_img}
               src={props.image}
-              alt="Photo of the Website"
+              alt="Photo of the Project"
               width={700}
               height={700}
             />
