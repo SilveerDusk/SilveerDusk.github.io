@@ -16,7 +16,7 @@ export default async function BlogPreview(props: IBlog) {
           </div>
           <div className={style.bottom}>
             <p className={style.post_p}>{props.description}</p>
-            <Link className={style.post_a} href={props.slug}>Read More</Link>
+            <Link className={style.post_a} href={`blog/${props.slug}`}>Read More</Link>
           </div>
           </div>
 	      </div>

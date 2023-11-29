@@ -12,7 +12,8 @@ async function getBlogs(){
 			// send a response as the blogs as the message
 	    return blogs
 	} catch (err) {
-	    return null
+    console.log(`error: ${err}`)
+	  return null
 	}
 }
 
@@ -30,6 +31,9 @@ export default async function Blogs() {
               date={blog.date}
               description={blog.description}
               slug={blog.slug}
+              content={blog.content}
+              img={blog.img}
+              comments={blog.comments}
             />
             )}
           </ul>

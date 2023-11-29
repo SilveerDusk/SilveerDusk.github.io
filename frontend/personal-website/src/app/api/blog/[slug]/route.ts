@@ -33,6 +33,6 @@ export async function GET(req: NextRequest, { params }: IParams) {
 	        const blog = await Blog.findOne({ slug }).orFail()
 	        return NextResponse.json(blog)
 	    } catch (err) {
-	        return NextResponse.json('Blog not found.', { status: 404 })
+	        return NextResponse.json('Blog not found: ' + {slug} , { status: 404 })
 	    }
 }
