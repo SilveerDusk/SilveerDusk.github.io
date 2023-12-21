@@ -12,7 +12,7 @@ export default function Home() {
           <div className="about-text">
             <p>My name is <strong>Jason Jelincic</strong>, I am a <em>second year</em> computer science student at <strong>Cal Poly SLO </strong>
              with a minor in Chinese.</p> 
-            <p>I am the <em>Outreach officer</em> for <strong>CS+AI</strong> and excited for the year and the oppertunities it will present.</p>
+            <p>I am the <em>Outreach officer</em> for <strong>CS+AI</strong> and excited for the year and the opportunities it will present.</p>
           </div>
         </div>
       </div>

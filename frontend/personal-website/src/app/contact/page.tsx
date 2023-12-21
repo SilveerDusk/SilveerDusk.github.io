@@ -12,7 +12,7 @@ async function handleSumbit(e: React.FormEvent<HTMLFormElement>) {
           'input[name="name"]'
         );
       const primaryInput =
-        formElement.querySelector<HTMLTextAreaElement>(
+        formElement.querySelector<HTMLInputElement>(
           'input[name="primary"]'
         );
       const emailInput = 
