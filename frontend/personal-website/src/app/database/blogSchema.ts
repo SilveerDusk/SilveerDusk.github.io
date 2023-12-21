@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { Schema } from "mongoose";
 
-type IComment = {
+export type IComment = {
   user: string;
   comment: string;
   time: Date;
@@ -18,8 +18,6 @@ export type IBlog = {
   comments: IComment[]; // array for comments
 };
 
-
-
 // mongoose schema 
 const blogSchema = new Schema<IBlog>({
   title: { type: String, required: true },
@@ -28,12 +26,12 @@ const blogSchema = new Schema<IBlog>({
   description: { type: String, required: true },
   content: { type: String, required: true },
   img: { type: String, required: true },
-  comments: {
-      user: {type: String, required: true},
-      comment: {type: String, required: true},
-      time: {type: Date, required: false, default: new Date()}
-  }
-})
+  comments: [{
+    user: { type: String, required: true },
+    comment: { type: String, required: true },
+    time: { type: Date, required: false, default: new Date()},
+  }]
+});
 
 // defining the collection and model
 const Blog = mongoose.models['blogs'] ||

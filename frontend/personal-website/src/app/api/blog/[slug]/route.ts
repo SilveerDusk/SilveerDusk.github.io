@@ -36,3 +36,4 @@ export async function GET(req: NextRequest, { params }: IParams) {
 	        return NextResponse.json('Blog not found: ' + {slug} , { status: 404 })
 	    }
 }
+
