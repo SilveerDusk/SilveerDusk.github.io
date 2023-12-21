@@ -89,8 +89,8 @@ export default function Blog({ params }: IParams) {
 
         
         //clear form data
-        //if (nameInput) nameInput.value = "";
-        //if (descriptionText) descriptionText.value = "";
+        if (nameInput) nameInput.value = "";
+        if (descriptionText) descriptionText.value = "";
 
         if (response.status === 200)
           setBlog({
