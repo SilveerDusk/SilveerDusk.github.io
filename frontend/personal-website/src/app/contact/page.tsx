@@ -1,7 +1,4 @@
 'use client';
-import Image from "next/image"
-
-
 
 async function handleSumbit(e: React.FormEvent<HTMLFormElement>) {
   e.preventDefault();
