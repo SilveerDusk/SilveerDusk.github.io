@@ -1,15 +1,13 @@
-import Image from "next/image"
-import Link from "next/link"
 import ProjectPreview from "@/components/projectPreview"
 import connectDB from "@/database/db"
-import Project from "@/database/protfolioSchema"
+import Project, {IProject} from "@/database/portfolioSchema"
 
 async function getProjects(){
   await connectDB() // function from db.ts before
 
   try {
       // query for all blogs and sort by date
-      const projects = await Project.find().orFail()
+      const projects = await Project.find().sort({ date: -1 }).orFail()
       // send a response as the blogs as the message
       return projects
   } catch (err) {
@@ -25,13 +23,16 @@ export default async function Protfolio() {
         <h2 className="sub-title">I did a thing once... well maybe a few times.</h2>
         <div className="container">
           <ul id="project-list">
-            {projectData && projectData.map(project => 
+            {projectData && projectData.map((project: IProject) => 
               <ProjectPreview
               key={project.title}
               title={project.title}
               description={project.description}
+              content={project.content}
+              img={project.img}
               slug={project.slug}
-              image={project.image}
+              github={project.github}
+              comments={project.comments}
               />
             )}
           </ul>

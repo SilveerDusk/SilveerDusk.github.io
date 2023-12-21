@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav>
         <Link href="/" className={style.navbar_li_a}>Home</Link>
         <Link href="/blog" className={style.navbar_li_a}>Blog</Link>
-        <Link href="/protfolio" className={style.navbar_li_a}>Protfolio</Link>
+        <Link href="/portfolio" className={style.navbar_li_a}>Protfolio</Link>
 				<Link href="/resume" className={style.navbar_li_a}>Resume</Link>
 				<Link href="/contact" className={style.navbar_li_a}>Connect With Me</Link>
       </nav>
