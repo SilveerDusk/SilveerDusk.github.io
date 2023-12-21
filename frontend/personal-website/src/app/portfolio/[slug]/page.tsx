@@ -37,7 +37,7 @@ export default function Project({ params }: IParams) {
 
   async function getProject(slug: string) {
     try {
-      const res = await fetch(`http://localhost:3000/api/portfolio/${slug}`, {
+      const res = await fetch(`/api/portfolio/${slug}`, {
         cache: "no-store",	
       })
 
@@ -81,7 +81,7 @@ export default function Project({ params }: IParams) {
 
         //Add comment to db and update UI
         const response = await fetch(
-          `http://localhost:3000/api/portfolio/${slug}/comment`, {
+          `/api/portfolio/${slug}/comment`, {
             method: "POST",
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(newComment),
