@@ -10,7 +10,6 @@ type IParams = {
   }
 }
 
-const API_URL = process.env.HOST_URL as string;
 
 function parseCommentTime(time: Date) {
   /*
@@ -36,10 +35,9 @@ export default function Project({ params }: IParams) {
   const [project, setProject] = useState<IProject | null>(null);
 	const { slug } = params // another destructure
 
-
   async function getProject(slug: string) {
     try {
-      const res = await fetch(`${API_URL}/api/portfolio/${slug}`, {
+      const res = await fetch(`https://personal-website-git-main-jason-jelincics-projects.vercel.app/api/portfolio/${slug}`, {
         cache: "no-store",	
       })
 
@@ -80,10 +78,10 @@ export default function Project({ params }: IParams) {
           comment: descriptionText?.value || "",
           time: new Date(),
         };
-
+        const API_URL = process.env.HOST_URL as string;
         //Add comment to db and update UI
         const response = await fetch(
-          `${API_URL}/api/portfolio/${slug}/comment`, {
+          `https://personal-website-git-main-jason-jelincics-projects.vercel.app/api/portfolio/${slug}/comment`, {
             method: "POST",
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(newComment),

@@ -10,8 +10,6 @@ type IParams = {
   }
 }
 
-const API_URL = process.env.HOST_URL as string;
-
 function parseCommentTime(time: Date) {
   /*
   Parses MongoDB/TS date object
@@ -36,10 +34,9 @@ export default function Blog({ params }: IParams) {
   const [blog, setBlog] = useState<IBlog | null>(null);
 	const { slug } = params // another destructure
 
-
   async function getBlog(slug: string) {
     try {
-      const res = await fetch(`${API_URL}/api/blog/${slug}`, {
+      const res = await fetch(`https://personal-website-git-main-jason-jelincics-projects.vercel.app/api/blog/${slug}`, {
         cache: "no-store",	
       })
 
@@ -83,7 +80,7 @@ export default function Blog({ params }: IParams) {
 
         //Add comment to db and update UI
         const response = await fetch(
-          `${API_URL}/api/blog/${slug}/comment`, {
+          `https://personal-website-git-main-jason-jelincics-projects.vercel.app/api/blog/${slug}/comment`, {
             method: "POST",
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(newComment),
