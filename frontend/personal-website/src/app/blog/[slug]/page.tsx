@@ -38,6 +38,7 @@ export default function Blog({ params }: IParams) {
     try {
       const res = await fetch(`/api/blog/${slug}`, {
         cache: "no-store",	
+        mode: `no-cors`
       })
 
       if (!res.ok) {
@@ -84,6 +85,7 @@ export default function Blog({ params }: IParams) {
             method: "POST",
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(newComment),
+            mode: `no-cors`
           });
 
         
