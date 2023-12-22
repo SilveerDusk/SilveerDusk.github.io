@@ -10,6 +10,8 @@ type IParams = {
   }
 }
 
+const API_URL = process.env.HOST_URL as string;
+
 function parseCommentTime(time: Date) {
   /*
   Parses MongoDB/TS date object
@@ -37,7 +39,7 @@ export default function Blog({ params }: IParams) {
 
   async function getBlog(slug: string) {
     try {
-      const res = await fetch(`/api/blog/${slug}`, {
+      const res = await fetch(`${API_URL}/api/blog/${slug}`, {
         cache: "no-store",	
       })
 
@@ -81,7 +83,7 @@ export default function Blog({ params }: IParams) {
 
         //Add comment to db and update UI
         const response = await fetch(
-          `/api/blog/${slug}/comment`, {
+          `${API_URL}/api/blog/${slug}/comment`, {
             method: "POST",
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(newComment),
