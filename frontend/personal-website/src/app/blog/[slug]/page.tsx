@@ -36,7 +36,7 @@ export default function Blog({ params }: IParams) {
 
   async function getBlog(slug: string) {
     try {
-      const res = await fetch(`https://personal-website-git-main-jason-jelincics-projects.vercel.app/api/blog/${slug}`, {
+      const res = await fetch(`/api/blog/${slug}`, {
         cache: "no-store",	
       })
 
@@ -80,7 +80,7 @@ export default function Blog({ params }: IParams) {
 
         //Add comment to db and update UI
         const response = await fetch(
-          `https://personal-website-git-main-jason-jelincics-projects.vercel.app/api/blog/${slug}/comment`, {
+          `/api/blog/${slug}/comment`, {
             method: "POST",
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(newComment),
