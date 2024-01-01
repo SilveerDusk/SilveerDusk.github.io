@@ -1,4 +1,4 @@
-import ProjectPreview from "@/components/projectPreview"
+import ProjectPreview from "@/components/projectPreview/projectPreview"
 import connectDB from "@/database/db"
 import Project, {IProject} from "@/database/portfolioSchema"
 

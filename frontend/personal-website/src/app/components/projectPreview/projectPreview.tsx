@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { IProject } from '@/database/portfolioSchema';
 import Image from 'next/image';
-import style from '@/components/projectPreview.module.css';
+import style from '@/components/projectPreview/projectPreview.module.css';
 
 export default async function ProjectPreview(props: IProject) {
   return (

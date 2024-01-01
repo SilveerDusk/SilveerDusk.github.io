@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '@/components/blogPreview.module.css'
+import style from '@/components/blogPreview/blogPreview.module.css'
 import Link from 'next/link';
 import { IBlog } from '@/database/blogSchema';
 
