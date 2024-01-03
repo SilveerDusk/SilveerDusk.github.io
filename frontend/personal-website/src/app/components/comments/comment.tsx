@@ -1,4 +1,5 @@
 import { IComment } from '@/database/blogSchema';
+import style from '@/components/comments/comment.module.css';
 
 {/* When we pass props, the name that we use to pass values
 		is the key for the type
@@ -37,12 +38,12 @@ function parseCommentTime(time: Date){
 
 function Comment({ comment }: CommentProps) {
   return (
-    <div className='centered'>
-      <div className='top'>
+    <div className={style.centered}>
+      <div className={style.top}>
         <h3>{comment.user}</h3>
         <span>{parseCommentTime(comment.time)}</span>
       </div>
-      <div className='bottom'>
+      <div className={style.bottom}>
         <p>{comment.comment}</p>
       </div>
     </div>
