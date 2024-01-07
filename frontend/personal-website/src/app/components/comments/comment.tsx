@@ -40,11 +40,11 @@ function Comment({ comment }: CommentProps) {
   return (
     <div className={style.centered}>
       <div className={style.top}>
-        <h3>{comment.user}</h3>
-        <span>{parseCommentTime(comment.time)}</span>
+        <h3 className={style.user}>{comment.user}</h3>
+        <span className={style.time}>{parseCommentTime(comment.time)}</span>
       </div>
       <div className={style.bottom}>
-        <p>{comment.comment}</p>
+        <p className={style.text}>{comment.comment}</p>
       </div>
     </div>
 

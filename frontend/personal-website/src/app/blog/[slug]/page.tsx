@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Comment from '@/components/comments/comment';
 import React, { useState, useEffect } from 'react';
 import { IBlog, IComment } from '@/database/blogSchema';
+import style from '@/blog/[slug]/page.module.css';
 
 type IParams = {
   params: {
@@ -110,22 +111,22 @@ export default function Blog({ params }: IParams) {
   return (
     blog && (
       <div>
-        <div className="centered">
-          <div className="post">
-            <h1 className="title">{blog.title}</h1>
+        <div className={style.centered}>
+          <div className={style.post}>
+            <h1 className={style.title}>{blog.title}</h1>
             <Image src={blog.img} alt={blog.title} width={600} height={600} />
-            <h3 className="sub-sub-title">{parseCommentTime(blog.date)}</h3>
-            <p className="post_p">{blog.content}</p>
+            <h3 className={style.sub_sub_title}>{parseCommentTime(blog.date)}</h3>
+            <p className={style.post_p}>{blog.content}</p>
           </div>
         </div>
-        <div className="post">
-          <h1 className="sub-title">Comment Section</h1>
+        <div className={style.post}>
+          <h1 className={style.sub_title}>Comment Section</h1>
           {blog.comments.map((comment: IComment, index: number) => (
             <Comment key={index} comment={comment} />
           ))}
-          <h3 className="sub-sub-title">Leave a Comment!</h3>
-          <div className="centered">
-            <form className="comment-form" onSubmit={handleSumbit}>
+          <h3 className={style.sub_sub_title}>Leave a Comment!</h3>
+          <div className={style.centered}>
+            <form className={style.comment_form} onSubmit={handleSumbit}>
               <input name="name" className="name" placeholder="Name"></input>
               <textarea
                 name="comment"
