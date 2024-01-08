@@ -2,6 +2,7 @@ import BlogPreview from '@/components/blogPreview/blogPreview';
 import connectDB from '@/database/db';
 import Blog from '@/database/blogSchema';
 import IComment from '@/database/blogSchema'
+import style from '@/blog/page.module.css'
 
 async function getBlogs(){
 	await connectDB() // function from db.ts before
@@ -20,8 +21,8 @@ async function getBlogs(){
 export default async function Blogs() {
   const blogData = await getBlogs();
   return (<div>
-			<div className="centered">
-        <h1 className='title'>My Blogs</h1>
+			<div className={style.centered}>
+        <h1 className={style.title}>My Blogs</h1>
         <div id="container">
           <ul id="blog-list">
             {blogData && blogData.map(blog => 
