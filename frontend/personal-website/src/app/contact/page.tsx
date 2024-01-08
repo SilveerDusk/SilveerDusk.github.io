@@ -1,4 +1,5 @@
 'use client';
+import style from '@/contact/page.module.css'
 
 async function handleSumbit(e: React.FormEvent<HTMLFormElement>) {
   e.preventDefault();
@@ -59,8 +60,8 @@ async function handleSumbit(e: React.FormEvent<HTMLFormElement>) {
 
 export default function Contact() {
   return (<div>
-			<div className="centered">
-        <h1 className="title">Connect With Me</h1>
+			<div className={style.centered}>
+        <h1 className={style.title}>Connect With Me</h1>
         <form  onSubmit={handleSumbit}>
           <div>
             <section>
