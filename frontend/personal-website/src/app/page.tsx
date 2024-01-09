@@ -1,15 +1,16 @@
 import Image from "next/image"
+import style from '@/page.module.css'
 
 // You can name the function within page.tsx anything you want.
 export default function Home() {
   return (<div>
-				<div className="centered">
-        <h1 className="title">Welcome to My Website!</h1>
-        <div className="about">
-          <div className="about-image">
+				<div className={style.centered}>
+        <h1 className={style.title}>Welcome to My Website!</h1>
+        <div className={style.about}>
+          <div className={style.about_image}>
             <Image src="/Slackgotophotocopy.jpeg" alt="A Photo of Me" width={400} height={400} ></Image>
           </div>
-          <div className="about-text">
+          <div className={style.about_text}>
             <p>My name is <strong>Jason Jelincic</strong>, I am a <em>second year</em> computer science student at <strong>Cal Poly SLO </strong>
              with a minor in Chinese.</p> 
             <p>I am the <em>Outreach officer</em> for <strong>CS+AI</strong> and excited for the year and the opportunities it will present.</p>
