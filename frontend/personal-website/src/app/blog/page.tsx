@@ -1,7 +1,6 @@
 import BlogPreview from '@/components/blogPreview/blogPreview';
 import connectDB from '@/database/db';
 import Blog from '@/database/blogSchema';
-import IComment from '@/database/blogSchema'
 import style from '@/blog/page.module.css'
 
 async function getBlogs(){
