@@ -11,7 +11,7 @@ export default async function BlogPreview(props: IBlog) {
         <div className={style.post}>
           <div key={props.title}>
             <div className={style.top}>
-            <h2 className={style.top_h2}> {props.title} </h2>
+            <Link className={style.top_h2} href={`blog/${props.slug}`}> {props.title} </Link>
             <h3 className={style.top_h3}>{props.date.toDateString()}</h3>
           </div>
           <div className={style.bottom}>

@@ -20,7 +20,7 @@ export default async function ProjectPreview(props: IProject) {
           </a>
         </div>
         <div className={style.project_details}>
-          <h3 className={style.project_title}>{props.title}</h3>
+          <Link className={style.project_title} href={`portfolio/${props.slug}`}>{props.title}</Link>
           <p className="project_description">{props.description}</p>
           <Link className={style.project_link} href={`portfolio/${props.slug}`}>
             Learn More!
