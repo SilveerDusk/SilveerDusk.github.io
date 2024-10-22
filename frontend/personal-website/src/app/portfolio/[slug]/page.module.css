@@ -53,11 +53,10 @@
   align-items: center;
   margin: 10px;
   padding: 5px;
-  background: #001E2B;
+  background: radial-gradient(circle, #001E2B, #023430);
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 20px;
-  border: 1px solid white;
   color: white;
 }
 .post_p{
