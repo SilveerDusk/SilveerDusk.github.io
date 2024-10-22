@@ -6,11 +6,11 @@
   justify-content: center;
   margin: 10px;
   padding: 5px;
-  background: linear-gradient(115deg, #023E8A, #0096C7);
+  background: radial-gradient(circle, #001E2B, #023430);
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 20px;
-  color: seashell;
+  color: white;
 }
 .project_img{
   border: 2px solid black;

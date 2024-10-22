@@ -119,13 +119,13 @@ export default function Blog({ params }: IParams) {
             <p className={style.post_p}>{blog.content}</p>
           </div>
         </div>
-        <div className={style.post}>
+        <div className={style.centered}>
           <h1 className={style.sub_title}>Comment Section</h1>
           {blog.comments.map((comment: IComment, index: number) => (
             <Comment key={index} comment={comment} />
           ))}
           <h3 className={style.sub_sub_title}>Leave a Comment!</h3>
-          <div className={style.centered}>
+          <div className={style.post}>
             <form className={style.comment_form} onSubmit={handleSumbit}>
               <input name="name" className="name" placeholder="Name"></input>
               <textarea

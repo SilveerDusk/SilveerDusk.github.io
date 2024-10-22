@@ -5,10 +5,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: #03055ed4;
+  background-color: #001E2B;
   padding-right: 25px;
   font-size: 20px;
-  color: seashell;
+  color: white;
   padding: 15px;
 }
 .logo_a{
@@ -19,12 +19,12 @@
   margin-inline-start: 20px;
   margin-inline-end: 0px;
   font-weight: bold;
-  color: seashell;
+  color: white;
   text-decoration: none;
 }
 .navbar_li_a{
   padding-right: 25px;
   font-size: 20px;
-  color: seashell;
+  color: white;
   text-decoration: underline;
 }

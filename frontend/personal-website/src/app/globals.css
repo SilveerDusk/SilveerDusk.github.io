@@ -4,7 +4,7 @@
 
 /* Body */
 body{
-  background: linear-gradient(135deg, #0077B6, #48CAE4);
+  background: linear-gradient(135deg, #023430, #001E2B);
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
@@ -22,7 +22,7 @@ main{
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: #03055ed4;
+  background-color: #001E2B;
 }
 .logo a{
   display: block;
@@ -32,7 +32,7 @@ main{
   margin-inline-start: 20px;
   margin-inline-end: 0px;
   font-weight: bold;
-  color: seashell;
+  color: white;
   text-decoration: none;
 }
 .navbar li{
@@ -41,7 +41,7 @@ main{
 .navbar li a{
   padding-right: 25px;
   font-size: 20px;
-  color: seashell;
+  color: white;
 }
 /*  Titles */
 .centered{
@@ -50,11 +50,11 @@ main{
   align-items: center;
   margin: 10px;
   padding: 5px;
-  background: linear-gradient(45deg, #023E8A, #0096C7);
+  background: linear-gradient(45deg, #001E2B, #023430);
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 20px;
-  color: seashell;
+  color: white;
 }
 .title {
   display: block;
@@ -182,11 +182,11 @@ label{
   align-items: center;
   margin: 10px;
   padding: 5px;
-  background: linear-gradient(115deg, #023E8A, #0096C7);
+  background: linear-gradient(115deg, #023430, #00684A);
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 20px;
-  color: seashell;
+  color: white;
 }
 .top{
   display: flex;

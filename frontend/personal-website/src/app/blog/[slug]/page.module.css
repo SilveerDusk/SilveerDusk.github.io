@@ -5,11 +5,12 @@
   align-items: center;
   margin: 10px;
   padding: 5px;
-  background: linear-gradient(45deg, #023E8A, #0096C7);
+  background: #001E2B;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 20px;
-  color: seashell;
+  border: 1px solid white;
+  color: white;
 }
 .title {
   display: block;
@@ -54,11 +55,11 @@
   align-items: center;
   margin: 10px;
   padding: 5px;
-  background: linear-gradient(115deg, #023E8A, #0096C7);
+  background: radial-gradient(circle, #001E2B, #023430);
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 20px;
-  color: seashell;
+  color: white;
 }
 .post a{
   margin: 5px;
